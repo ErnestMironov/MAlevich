@@ -1,0 +1,36 @@
+@import 'variables';
+
+.pagination{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    
+    &__item{
+        width: 33px;
+        height: 33px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        border: 1px solid rgba(196, 196, 196, 0.5);
+        border-left: 0;
+        text-decoration: none;
+        color: $blue;
+        transition: all 0.3s;
+
+        &:first-child{
+            border-left: 1px solid rgba(196, 196, 196, 0.5);
+        }
+
+        &_prev{
+            .pagination__arrow{
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__arrow{
+        height: 40%;
+        width: auto;
+    }
+}

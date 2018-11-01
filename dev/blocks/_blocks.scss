@@ -1,0 +1,71 @@
+@import 'variables';
+
+
+.container{  
+    max-width: 1178px;
+    margin: auto;
+    box-sizing: border-box;
+    @include container{
+        width: 90%;
+    }
+    
+    @include tablet{
+        max-width: 100%;
+        padding: 0 40px;
+    }
+}
+
+.no-scroll{
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+
+.page{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Open Sans';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    @include mobile{
+        font-size: 13px;
+    }
+}
+*{
+    outline: none;
+    box-sizing: border-box;
+}  
+
+
+@import '../../node_modules/filepond/dist/filepond';
+@import 'fancybox';
+@import 'animate';
+@import 'input';
+@import 'headers';
+@import 'checkbox';
+@import 'star-raiting';
+@import 'button';
+@import 'select';
+@import 'modal';
+@import 'bread-crumbs';
+@import 'product-card';
+@import 'product-slider';
+@import 'menu'; 
+@import 'desktop-header';
+@import 'mobile-header';
+@import 'main-slider'; 
+@import 'footer';
+@import 'pagination';
+@import 'product-page';
+@import 'instagram';
+@import 'form';
+@import 'catalog';
+@import 'lists';
+@import 'categories';
+

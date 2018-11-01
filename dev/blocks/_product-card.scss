@@ -1,0 +1,153 @@
+@import 'variables';
+
+.product-card{
+   width: 330px;
+   height: 495px;
+   padding: 15px 25px;
+   box-sizing: border-box;
+   position: relative;
+   z-index: 1;
+   color: $white;
+   text-decoration: none;
+   text-transform: uppercase;
+   overflow: hidden;
+
+   @include tablet{
+       height: auto;
+       padding-bottom: 100%;
+   }
+
+   @include mobile{
+       width: 186px;
+       height: 343px;
+       padding-bottom: 0;
+   }
+
+   &:hover{
+       .product-card{
+           &__link{
+                opacity: 1;
+           }
+           &__img{
+               transform: scale(1.2);
+           }
+       }
+   }
+
+   &__img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        transition: all ease-out 0.3s;
+   }
+   
+   &__border{
+       position: absolute;
+       border: 1px solid rgba(255, 255, 255, 0.4);
+       width: 308px;
+       height: 474px;
+       left: 11px; 
+       top: 10px;
+       z-index: 2;
+
+       @include tablet{
+            width: calc(100% - 18px);
+            height: calc(100% - 18px);
+            left: 8px;
+            top: 8px;
+       }
+
+       @include mobile{
+            width: 168px;
+            height: 325px;
+            left: 9px;
+        }
+   }
+
+//    &:after{
+//         content: '';
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         height: 100%;
+//         width: 100%;
+//    }
+
+   &:before{
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(180deg, #000000 -5.25%, rgba(255, 255, 255, 0) 36.03%);
+    }
+
+    &__head{
+        font-size: 24px;
+        line-height: 29px;
+        position: relative;
+        z-index: 2;
+        font-weight: 300;
+
+        @include mobile{
+            line-height: 22px;
+            font-size: 18px;
+        }
+    }
+
+    &__subtitle{
+        font-size: 14px;
+        position: relative;
+        z-index: 2;
+        margin-top: 18px;
+
+        @include mobile{
+            display: none;
+        }
+
+        &-var{
+            opacity: 0.8;
+        }
+    }
+
+    &__link{
+        position: absolute;
+        z-index: 3;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($black, 0.7);
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: all ease-out 0.3s;
+        display: flex;
+        text-decoration: none;
+        color: $black;
+    }
+
+    &__round{
+        display: flex;
+        border-radius: 50%;
+        background-color: $white;
+        text-transform: uppercase;
+        margin: auto; 
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        height: 95px;
+        width: 95px;
+        transition: all ease-out 0.25s;
+
+        &:hover{
+            background-color: $blue;
+            color: $white;
+            box-shadow: 0px 0px 20px 3px $blue;
+        }
+    }
+}     

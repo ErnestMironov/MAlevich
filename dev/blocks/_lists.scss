@@ -1,0 +1,114 @@
+@import 'variables';
+
+.lists{
+    position: relative;
+    z-index: 1;
+    padding-top: 47px;
+
+    @include mobile{
+        padding-top: 14px;
+    }
+
+    .container{
+        @include mobile{
+            padding: 0px 15px;
+        }
+    }
+
+    &__head{
+        font-size: 36px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: #2A2A2A;
+        font-weight: 300;
+        margin: 0;
+        margin-bottom: 43px;
+
+        @include mobile{
+            font-size: 18px;
+            letter-spacing: normal;
+            margin-bottom: 14px;
+        }
+    }
+
+    &__subtitle{
+        line-height: 28px;
+        font-size: 18px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin-bottom: 78px;
+
+        @include mobile{
+            line-height: 22px;
+            font-size: 14px;
+            letter-spacing: 0.02em;
+            text-transform: unset;
+            margin-bottom: 27px;
+        }
+    }
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-height: 2150px;
+
+        @include mobile{
+            max-height: 100%;
+        }
+
+        &-item{
+            width: 50%;
+            margin-bottom: 43px;
+
+            @include mobile{
+                width: 100%;
+            }
+        }
+    }
+
+    &__text{
+        max-width: 480px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-transform: uppercase;
+
+        &-item{
+            margin: 0;
+            padding: 0;
+            margin-bottom: 20px;
+            line-height: normal;
+            font-size: 18px;
+            letter-spacing: 0.08em;
+
+            @include mobile{
+                line-height: 17px;
+                font-size: 14px;
+                letter-spacing: 0.02em;
+            }
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        color: inherit;
+
+    }
+    
+    &__title{
+        font-size: 24px;
+        color: $blue;
+        line-height: 34px;
+        letter-spacing: 0.02em;
+        margin-bottom: 31px;
+
+        @include mobile{
+            line-height: 26px;
+            font-size: 18px;
+            letter-spacing: 0.08em;
+            margin-bottom: 10px;
+        }
+    }
+
+}

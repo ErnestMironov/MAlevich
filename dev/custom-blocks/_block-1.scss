@@ -1,0 +1,94 @@
+@import "../blocks/variables";
+
+.block-1{
+    height: calc(100vh - 82px);
+    position: relative;
+
+    .container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1;
+    }
+    
+    &__left{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__subtitle{
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 24px;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    &__title{
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 48px;
+    }
+
+    &__text{
+        line-height: normal;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        margin-top: 26px;
+        max-width: 281px;
+    }
+
+    &__btn{
+        margin-top: 47px;
+    }
+
+    &__bubble{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-50%);
+    }
+
+    &__right{
+        position: absolute;
+        height: 100%;
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__strawberry{
+        position: absolute;
+        top: 167px;
+        left: 600px;
+    }
+
+    &__man{
+        position: absolute;
+
+        &_purple{
+            top: 160px;
+            right: 360px;
+        }
+
+        &_yellow{
+            top: 250px;
+            right: 0
+        }
+
+        &_blue{
+            right: 478px;
+            top: 440px;
+        }
+
+        &_white{
+            top: 504px;
+            right: 66px;
+        }
+    }
+}

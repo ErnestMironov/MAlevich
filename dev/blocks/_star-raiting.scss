@@ -1,0 +1,11 @@
+@import 'variables';
+
+
+
+.star-rating{
+	height: 100%;
+	&__star{
+		color: $black;
+		margin-left: 5px;
+	}
+}

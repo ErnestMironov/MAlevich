@@ -1,0 +1,14 @@
+@import "../blocks/variables";
+
+.main-block{
+    overflow: hidden;
+}
+
+@import 'block-1';
+
+
+.hide-on-mobile{
+    @include mobile{
+        display: none;
+    }
+}

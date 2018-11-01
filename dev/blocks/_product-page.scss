@@ -1,0 +1,247 @@
+@import 'variables';
+
+.product-page{
+    position: relative;
+    z-index: 1;
+    padding-top: 56px;
+    overflow: hidden;
+
+    @include mobile{
+        padding-top: 0;
+    }
+
+    &__btn{
+        display: inline-flex;
+        line-height: normal;
+        font-size: 18px;
+        letter-spacing: 0.23em;
+        text-transform: unset;
+
+        @include mobile{
+            display: none;
+        }
+    }
+
+    &__body{
+        margin-top: 54px;
+        display: flex;
+        max-width: 100vw;
+        
+        @include mobile{
+            flex-direction: column-reverse;
+            margin-top: 0;
+        }
+    }
+
+    &__info{
+        min-width: 400px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include mobile{
+            padding: 0px 22px;
+            min-width: 0;
+            width: auto;
+        }
+
+        &-btn{
+            margin-top: 52px;
+            text-transform: unset;
+            font-size: 14px;
+            letter-spacing: 0.11em;
+            font-weight: 400;
+
+            @include mobile{
+                display: none;
+            }
+        }
+    }
+
+    &__text-wrapper{
+        position: relative;
+        padding: 30px 27px;
+        
+    }
+
+    &__text-wrapper-border {
+        &_top {
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: $blue;
+            top: 0;
+            left: 0;
+            animation-fill-mode: forwards;
+            animation-duration: 0.4s;
+            animation-delay: 0.4s;
+        }
+
+        &_right, {
+            position: absolute;
+            width: 3px;
+            height: 0;
+            background-color: $blue;
+            right: 0;
+            top: 0;
+            animation-fill-mode: forwards;
+            animation-duration: 0.4s;
+            animation-delay: 0.8s;
+        }
+
+        &_bottom {
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: $blue;
+            right: 0;
+            bottom: 0;
+            animation-fill-mode: forwards;
+            animation-duration: 0.4s;
+            animation-delay: 1.2s;
+        }
+
+        &_left {
+            position: absolute;
+            width: 3px;
+            height: 0;
+            background-color: $blue;
+            left: 0;
+            bottom: 0;
+            animation-fill-mode: forwards;
+            animation-duration: 0.4s; 
+            animation-delay: 1.6s;
+        }
+    }
+
+    &__title{
+        line-height: normal;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: $blue;
+
+        @include mobile{
+            font-size: 24px;
+            letter-spacing: 0.18em;
+        }
+    }
+
+    &__param{
+        margin-top: 49px;
+        
+        @include mobile{
+            margin-top: 9px;
+        }
+
+        &-item{
+            margin-bottom: 16px;
+            letter-spacing: 0.26em;
+            text-transform: uppercase;
+
+            @include mobile{
+                font-size: 13px;
+                letter-spacing: 0.18em;
+            }
+
+            &:after{
+                content: '';
+                height: 1px;
+                width: 29px;
+                background-color: $blue;
+                margin-top: 8px;
+                display: block;
+            }
+
+            &:last-child{
+                margin-bottom: 0;
+
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }   
+
+    &__text{
+        margin-top: 40px;
+        line-height: 21px;
+        font-size: 14px;
+        letter-spacing: 0.17em;
+
+        @include mobile{
+            margin-top: 9px;
+        }
+    }
+
+    &__slider-wrapper{
+        margin-left: 50px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+
+        @include mobile{
+            margin-left: 0;
+        }
+    }
+
+
+    .swiper-slide{
+        width: 40vw;
+        opacity: 0.3;
+        transition: all ease-out 0.25s;
+
+        @include mobile{
+            width: 80vw;
+        }
+
+        &-active{
+            opacity: 1;
+            transition: all ease-out 0.25s;
+        }
+        
+    }
+
+    &__slide{
+        width: 100%;
+        background-size: cover;
+        object-fit: cover;
+    }
+
+    &__navigation{
+        position: absolute;
+        bottom: 38px;
+        left: 49px;
+        z-index: 1;
+
+        @include mobile{
+            bottom: 11px;
+            left: 5px;
+        }
+    }
+
+    &__counter{
+        margin-top: 20px;
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 0.11em;
+        color: rgba(255, 255, 255, 0.78);
+    }
+
+    &__arrow_left, &__arrow_right{
+        cursor: pointer;
+
+        @include mobile{
+            display: none;
+        }
+    }
+
+    &__arrow_left{
+        opacity: 0;
+    }
+    
+}
+
+

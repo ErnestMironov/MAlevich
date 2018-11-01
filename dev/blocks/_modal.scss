@@ -1,0 +1,28 @@
+@import 'variables';
+
+.modal{
+    padding: 40px;
+    display: none;
+    box-sizing: border-box;
+    width: 450px;
+
+    &__head{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    &__input{
+        input{
+            padding: 10px 17px 20px;
+        }
+    }
+
+    &__textarea{
+        height: 120px;
+         
+        &:after{
+            top: 20px;
+        }
+    }
+}
