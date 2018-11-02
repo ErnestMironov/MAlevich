@@ -2,6 +2,7 @@
 
 .block-1{
     height: calc(100vh - 82px);
+    min-height: 919px;
     position: relative;
 
     .container{
@@ -62,14 +63,27 @@
         transform: translateX(-50%);
     }
 
+    &__arc{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        &_skeleton{
+            position: static;
+            visibility: hidden;
+        }
+    }
+
     &__strawberry{
         position: absolute;
         top: 167px;
         left: 600px;
     }
+    
 
     &__man{
         position: absolute;
+        z-index: 2;
 
         &_purple{
             top: 160px;
@@ -77,8 +91,8 @@
         }
 
         &_yellow{
-            top: 250px;
-            right: 0
+            top: 253px;
+            right: 45px;
         }
 
         &_blue{
@@ -89,6 +103,30 @@
         &_white{
             top: 504px;
             right: 66px;
+        }
+    }
+
+    &__letter{
+        position: absolute;
+
+        &_m{
+            top: 305px;
+            right: 515px;
+        }
+
+        &_y{
+            top: 177px;
+            right: 93px;
+        }
+
+        &_c{
+            top: 679px;
+            right: 584px;
+        }
+
+        &_k{
+            top: 636px;
+            right: 56px;
         }
     }
 }

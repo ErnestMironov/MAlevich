@@ -1,22 +1,43 @@
 <div class="categories">
-    <a href="residential-interiors.php" class="categories__item" style="background-image: url('production/img/categories(1).png')">
-        <div class="categories__text-wrapper">
-            <div class="categories__title">ДИЗАЙН ЖИЛЫХ ИНТЕРЬЕРОВ</div>
-            <div href="residential-interiors.php" class="btn categories__btn">
-                подробнее
-                <img src="production/img/arrow.png"  alt="">
+            <div class="container">
+                <h2 class="categories__title">что мы делаем</h2>
             </div>
-            <img src="production/img/arrow.png" class="categories__mobile-arrow"  alt="">
-        </div>
-    </a>
-    <a href="commerical-interiors.php" class="categories__item categories__item_black" style="background-image: url('production/img/categories(2).png')">
-        <div class="categories__text-wrapper">
-            <div class="categories__title">ДИЗАЙН коммерческих помещений</div>
-            <div href="commerical-interiors.php" class="btn categories__btn">
-                подробнее
-                <img src="production/img/arrow.png"  alt="">
+            <div class="categories__list">
+                <div class="categories__list-item">
+                    <img src="production/img/bubble-border(2).svg" alt="" class="categories__border">
+                    <img src="production/img/bubble(1).svg" alt="" class="categories__bubble"> 
+                    <img src="production/img/paper-roll.png" alt="" class="categories__icon">
+                    <div class="categories__name">широкоформатная <br> печать</div>
+                </div>
+                <div class="categories__list-item">
+                    <img src="production/img/bubble-border(3).svg" alt="" class="categories__border">
+                    <img src="production/img/bubble(2).svg" alt="" class="categories__bubble"> 
+                    <img src="production/img/rulon.png" alt="" class="categories__icon">
+                    <div class="categories__name">интерьерная <br> печать</div>
+                </div>
+                <div class="categories__list-item">
+                    <img src="production/img/bubble-border(4).svg" alt="" class="categories__border">
+                    <img src="production/img/bubble(3).svg" alt="" class="categories__bubble"> 
+                    <img src="production/img/paper.png" alt="" class="categories__icon">
+                    <div class="categories__name">широкоформатное <br> ламинирование</div>
+                </div>
+                <div class="categories__list-item">
+                    <img src="production/img/bubble-border(5).svg" alt="" class="categories__border">
+                    <img src="production/img/bubble(4).svg" alt="" class="categories__bubble"> 
+                    <img src="production/img/sticker.png" alt="" class="categories__icon">
+                    <div class="categories__name">плотерная <br> резка</div>
+                </div>
+                <div class="categories__list-item">
+                    <img src="production/img/bubble-border(6).svg" alt="" class="categories__border">
+                    <img src="production/img/bubble(5).svg" alt="" class="categories__bubble"> 
+                    <img src="production/img/docs.png" alt="" class="categories__icon">
+                    <div class="categories__name">pos <br> материалы</div>
+                </div>
+                <div class="categories__list-item">
+                    <img src="production/img/bubble-border(7).svg" alt="" class="categories__border">
+                    <img src="production/img/bubble(6).svg" alt="" class="categories__bubble"> 
+                    <img src="production/img/auto.png" alt="" class="categories__icon">
+                    <div class="categories__name">наклейки <br> на авто</div>
+                </div>
             </div>
-            <img src="production/img/arrow.png" class="categories__mobile-arrow"  alt="">
         </div>
-    </a>
-</div>
