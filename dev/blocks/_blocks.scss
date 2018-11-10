@@ -2,7 +2,7 @@
 
 
 .container{  
-    max-width: 1178px;
+    max-width: 1048px;
     margin: auto;
     box-sizing: border-box;
     @include container{
@@ -68,4 +68,6 @@
 @import 'catalog';
 @import 'lists';
 @import 'categories';
+@import 'contacts';
+@import 'delivery';
 

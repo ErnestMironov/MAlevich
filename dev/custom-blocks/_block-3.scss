@@ -1,0 +1,50 @@
+@import '../blocks/variables';
+
+.block-3{
+    padding-top: 308px;
+
+    .container{
+        position: relative;
+        max-width: 1178px;
+    }
+
+    &__top{
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__title{
+        margin: 0;
+        font-size: 24px;
+        letter-spacing: 0.03em;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__equally{
+        font-weight: bold;
+        line-height: normal;
+        font-size: 72px;
+        color: $yellow;
+        padding: 20px;
+    }
+
+    &__text{
+        margin-top: 79px;
+        font-size: 18px;
+        letter-spacing: 0.03em;
+        max-width: 560px;
+    }
+
+    &__btn{
+        margin-top: 51px;
+        width: 201px;
+    }
+
+    &__img{
+        position: absolute;
+        top: -250px;
+        left: 355px;
+    }
+}

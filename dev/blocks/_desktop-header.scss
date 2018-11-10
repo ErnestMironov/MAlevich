@@ -7,10 +7,11 @@
     justify-content: space-between;
     position: relative;
     z-index: 2;
+    max-width: 1178px;
+    margin: auto;
     
-    @include mobile{
-        height: 55px;
-    }
+
+    
 
 
     &__left,&__right, &__menu-btn{
@@ -35,6 +36,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
+        margin-right: 30px;
         &-item{
             display: inline-block;
             margin-right: 30px;
@@ -42,6 +44,10 @@
             line-height: normal;
             font-size: 18px;
             transition: all ease-out 0.25s;
+            
+            @include container{
+                margin-right: 10px;
+            }
 
             &:hover{
                 color: $blue;

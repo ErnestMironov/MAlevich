@@ -1,0 +1,84 @@
+@import 'variables';
+
+.contacts{
+    padding-top: 16px;
+    position: relative;
+
+    &__bubble{
+        position: absolute;
+        top: -314px;
+        left: -154px;
+        transform: rotate(-30deg);
+    }
+
+    &__arc{
+        position: absolute;
+        left: 2%;
+        top: -40%;
+            
+    }
+
+    &__title{
+        margin: 0;
+        font-weight: 300;
+        color:  $purple;
+        font-size: 36px;
+        letter-spacing: 0.03em;
+    }
+
+    &__list{
+        display: flex;
+        margin: auto;
+        margin-top: 85px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__list-item{
+        margin-bottom: 15px;
+    }
+
+    &__subtitle{
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color:  $purple;
+        text-transform: lowercase;
+    }
+
+    &__list-text{
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 0.02em;
+    }
+
+    &__img{
+        position: relative;
+        z-index: 3;
+        pointer-events: none;
+    }
+
+    &__map-wrapper{
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        iframe{
+            position: absolute;
+            z-index: 1;
+            left: 56%;
+            transform: translateX(-50%);
+            bottom: 30px;
+            
+        }
+    }
+
+    &__map-mask{
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 30px;
+        pointer-events: none;
+    }
+}

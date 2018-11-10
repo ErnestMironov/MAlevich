@@ -1,0 +1,242 @@
+@import '../blocks/variables';
+
+.block-5{
+    padding-top: 23px;
+
+    // КУЧА КАРТИНОК (нафиг они вообще сдались)
+
+    &__arc{
+        position: absolute;
+        top: -581px;
+        left: -283px;
+    }
+
+    &__arc-2{
+        position: absolute;
+        top: 450px;
+        left: 50%;
+        transform: translateX(-50%);    
+    }
+
+    &__c{
+        position: absolute;
+        right: -400px;
+        top: -92px;
+    }
+
+    &__y{
+        position: absolute;
+        top: -10px;
+        left: -267px;
+    }
+
+    &__m{
+        position: absolute;
+        right: -322px;
+        top: 0;
+        transform: rotate(60deg);
+    }
+
+    &__k{
+        position: absolute;
+        top: -78px;
+        left: -293px;
+    }
+
+    &__top-border{
+        position: absolute;
+        top: -278px;
+        left: -270px;
+    }
+
+    &__drop-1{
+        position: absolute;
+        right: -184px;
+        top: 0;
+    }
+
+    &__drop-2{
+        position: absolute;
+        right: -472px;
+        top: -114px;
+    }
+
+    &__drop-3{
+        position: absolute;
+        left: -806px;
+        top: -214px;
+    }
+
+    &__drop-4{
+        position: absolute;
+        top: -300px;
+        right: -700px;
+    }
+
+    &__big-border{
+        position: absolute;
+        top: -300px;
+        left: -412px;
+    }
+
+    &__puddle-wrapper{
+        margin-top: 61px;
+        display: flex;
+        margin-left: -606px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__mop{
+        margin-right: 35px;
+    }
+    
+    &__sitting-man{
+        position: absolute;
+        top: 50px;
+        right: -640px;
+    }
+
+    &__bucket{
+        position: absolute;
+        left: 50%;
+        bottom: 590px;
+        transform: translateX(75%);
+
+        @media (max-width: 1200px) {
+            transform: translateX(42%);
+        }
+    }
+
+    &__bucket-wrapper {
+        position: absolute;
+        top: -3%;
+        left: -8px;
+        height: 228px;
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(0.66, 0.11, 0.93, 0.08);
+        animation-fill-mode: forwards;
+    }
+
+    &__glass{
+        position: absolute;
+        top: 88px;
+        right: 0;
+    }
+
+    &__glass-drop{
+        position: absolute;
+        right: 0;
+        bottom: -90px;    
+    }
+
+    &__cleaner-wrapper{
+        position: absolute;
+        top: 140px;
+        left: -262px;
+    }
+
+    &__puddle {
+        position: absolute;
+        bottom: 25px;
+        left: 500px;
+    }
+
+    &__cleaner{
+        position: relative;
+        z-index: 1;
+    }
+
+
+    // ЗАКОНЧИЛИСЬ (САМ НЕ ВЕРЮ)
+
+    &__title{
+        margin: 0;
+        font-weight: 300;
+        line-height: normal;
+        font-size: 36px;
+        letter-spacing: 0.03em;
+        color: $blue;
+        align-self: flex-start;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    &__item{
+        position: relative;
+        display: inline-block;
+        margin-bottom: 120px;
+
+        &_left{
+            margin-top: 163px;
+            align-self: flex-start;
+
+        }
+
+        &_right{
+            margin-top: 163px;
+            align-self: flex-end;
+        }
+
+        &_center{
+            align-self: center;
+        }
+
+        &_l{
+            align-self: center;
+
+            .block-5__item-text{
+                max-width: 728px;
+            }
+        }
+    }
+
+    &__item-bg{
+        position: absolute;
+        top: -109px;
+        left: -77px;
+    }
+
+    &__item-text{
+        max-width: 527px;
+        line-height: 29px;
+        font-size: 18px;
+        letter-spacing: 0.08em;
+        text-transform: lowercase;
+        position: relative;
+        z-index: 1;
+        min-height: 261px;
+    }
+
+    
+    &__color-text{
+        color: $blue;
+        text-align: center;
+        max-width: 525px;
+        margin: auto;
+        margin-top: 84px;
+        font-size: 24px;
+        letter-spacing: 0.03em;
+        text-transform: lowercase;
+        position: relative;
+        z-index: 2;
+        align-self: center;
+    }
+
+    &__subtitle{
+        margin-top: 392px;
+        margin-bottom: 101px;
+        font-weight: 300;
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        max-width: 495px;
+        align-self: center;
+    }
+
+
+}

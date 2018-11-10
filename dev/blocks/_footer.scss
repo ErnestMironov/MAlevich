@@ -1,125 +1,37 @@
 @import 'variables';
 
 .footer {
-    width: 100%;
-    background-color: $black;
-    color: $white;
-    padding: 35px 0 67px;
-    font-size: 18px;
-    position: relative;
-    z-index: 1;
-    color: $white;
+    padding-top: 367px;
+    padding-bottom: 50px;
 
-    @include mobile {
-        background: url('img/stone_bg.jpg');
-        background-size: cover;
-        padding: 24px 0px 12px;
-    }
-
-    .container {
-        max-width: 1351px;
+    .container{
         display: flex;
-        justify-content: space-between;
-
-        @include mobile {
-            padding: 0px 24px;
-            flex-wrap: wrap;
-        }
+        flex-direction: column;
     }
-
-
-    &__column {
-        height: 100%;
-        width: 18%;
-
-        @include mobile {
-            width: 49%;
-            margin-bottom: 14px;
-        }
-    }
-
-    &__title {
-        text-transform: uppercase;
-        margin-bottom: 18px;
-
-        @include mobile {
-            font-size: 14px;
-            color: $blue;
-        }
-    }
-
-    &__list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-
-        &-item {
-            margin-bottom: 6px;
-
-            @include mobile {
-                margin-bottom: 6px;
-                line-height: 15px;
-                font-size: 14px;
-            }
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
-
-    &__link {
-        text-decoration: none;
-        color: inherit;
-        display: inline-block;
-        position: relative;
-
-        &:hover {
-            &.footer__link:after {
-                transform: scaleX(1)
-            }
-        }
-
-        &:after {
-            content: '';
-            transition: ease-out 0.3s;
-            height: 1px;
-            background-color: $white;
-            width: 100%;
-            transform: scaleX(0);
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-        }
-    }
-
-    &__item {
-        margin-bottom: 30px;
+    
+    &__info{
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 0.1em;
     }
 
     &__axlab {
         position: relative;
         display: inline-block;
-        font-weight: 400;
-        text-transform: uppercase;
+        margin: auto;
+        margin-top: 46px;
+        font-weight: 300;
         text-decoration: none;
         color: inherit;
-
-        @include mobile{
-            line-height: normal;
-            font-size: 12px;
-            text-align: center;
-            letter-spacing: 0.04em;
-            text-transform: lowercase;
-            font-weight: 300;
-        }
+        font-size: 18px;
+        letter-spacing: 0.1em;
 
         &:after {
             content: "";
             position: absolute;
             bottom: -5px;
             height: 1px;
-            background-color: $white;
+            background-color: $black;
             left: 0;
             transition: all ease-out 0.3s;
             width: 0;
@@ -131,51 +43,5 @@
             }
         }
 
-    }
-
-    &__top, &__bottom{
-        display: none;
-
-        @include mobile{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            margin-bottom: 19px;
-        }
-    }
-
-    &__bottom{
-        margin-bottom: 0;
-        flex-direction: column;
-        line-height: 16px;
-        font-size: 14px;
-    }
-
-    &__logo{
-        display: block;
-        text-decoration: none;
-        color: inherit;
-
-        img{
-            width: 75px;
-            height: auto;
-        }
-    }
-
-    &__phone{
-        display: block;
-        font-size: 24px;
-        letter-spacing: 0.04em;
-    }
-
-    &__email{
-        color: $blue;
-        margin-bottom: 10px;
-    }
-    
-    &__adress{
-        text-align: center;
-        margin-bottom: 10px;
     }
 }

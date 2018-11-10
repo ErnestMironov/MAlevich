@@ -1,125 +1,49 @@
-<?php 
-    // include 'callBack.php';
-?>
+<form class="form">
+    <img src="production/img/block-4__bubble.svg" alt="" class="form__bubble">
+    <img src="production/img/form_border.svg" alt="" class="form__border">
+    <div class="container">
+        <h2 data-wow-duration=".5s" data-wow-offset="300" class="form__title wow fadeInDown">оставить заявку</h2>
+        <div class="form__inputs-wrapper">
+            <div class="input form__input">
+                <input placeholder="ваше имя" type="text">
+            </div>
+            <div class="input form__input">
+                <input placeholder="ваш телефон или Email" type="text">
+            </div>
+            <div class="input input_textarea  form__input ">
+                <textarea placeholder="ваше сообщение" type="textarea"></textarea>
+            </div>
+        </div>
+        <label class="form__file">
+            <svg width="352px" height="36px"
+                fill="#F2F2F2"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" stroke-dasharray="8px" stroke="black" stroke-width="2px"/>
+            </svg>
+               <div class="form__file-text"> выберите файл</div>
+            <input type="file">
+        </label>
+        <div class="form__description">
+            Вы можете прикрепить файлы с макетами:
+            - до 5 файлов <br>
+            - размер всех файлов не должен превышать 20 Мб <br>
+            - Файлы большего размера выкладывайте на файлообменник и присылайте нам ссылку
+        </div>
+        <div class="form__img">
+            <img src="production/img/form__img.svg" alt="" class="form__img-floor">
+            <img src="production/img/form__man.png" alt="" class="form__img-man">
+        </div>
+    </div>
+</form>
 <footer class="footer">
     <div class="container">
-        <div class="footer__top">
-            <a class="footer__logo" href="index.php">
-                <img src="production/img/logo.svg" alt="">
-            </a>
-            <a href="tel:(812) 410-00-30" class="footer__phone footer__link">(812) 410-00-30</a>
+        <div class="footer__info">
+            © 2007-2018 "Типография Малевич" - широкоформатная печать в СПБ
         </div>
-        <div class="footer__column">
-            <div class="footer__title">о компании</div>
-            <ul class="footer__list">
-                <li class="footer__list-item">
-                    <a href="about.php" class="footer__link">О нас</a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="why.php" class="footer__link">Почему мы</a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="vacancy.php" class="footer__link">Вакансии</a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="partners.php" class="footer__link">Партнеры</a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="#!" class="footer__link">Лицензии</a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="#!" class="footer__link">Публикации</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__column">
-            <div class="footer__title">дизайн интерьера</div>
-            <ul class="footer__list">
-                <li class="footer__list-item">
-                    <a href="commerical-interiors.php" class="footer__link">Коммерческих помещений </a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="residential-interiors.php" class="footer__link">Жилых интерьеров</a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="#!" class="footer__link">Комплектация объекта</a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="catalog.php" class="footer__link">Портфолио</a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="#!" class="footer__link">FAQ</a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="#!" class="footer__link">Договор</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__column">
-            <div class="footer__title">
-                <a href="repair-and-decoration.php" class="footer__link">ремонт и отделка</a>
-            </div>
-            <ul class="footer__list">
-                <li class="footer__list-item">
-                    <a href="#!" class="footer__link">Коммерческих помещений </a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="#!" class="footer__link">Жилых интерьеров</a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="#!" class="footer__link">Комплектация объекта</a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="#!" class="footer__link">Портфолио</a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="#!" class="footer__link">FAQ</a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="#!" class="footer__link">Договор</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__column">
-            <div class="footer__title">наша работа</div>
-            <ul class="footer__list">
-                <li class="footer__list-item">
-                    <a href="authors-supervision.php" class="footer__link">Авторский надзор</a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="catalog.php" class="footer__link">Портфолио</a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="#!" class="footer__link">Стоимость</a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="#!" class="footer__link">Контакты</a>
-                </li>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__column hide-on-mobile">
-            <div class="footer__item">
-                <a href="tel:+7 (812) 410-00-30" class="footer__link">+7 (812) 410-00-30</a>
-            </div>
-            <div class="footer__item">
-                <a href="mailto:info@atmosferadoma.ru" class="footer__link">info@atmosferadoma.ru</a>
-            </div>
-            <div class="footer__item">
-                Санкт-Петербург, Красногвардейская площадь, д. 3
-            </div>
-            <div class="footer__item">
-                <a href="https://axlab.ru/" class="footer__axlab">Создано в AxLab</a>
-            </div>
-        </div>
-        <div class="footer__bottom">
-            <a href="mailto:info@atmosferadoma.ru" class="footer__email footer__link">info@atmosferadoma.ru </a>
-            <div class="footer__adress">Санкт-Петербург, Красногвардейская площадь, д. 3</div>
-            <a href="https://axlab.ru" class="footer__axlab">&copy; made with love from axlab</a>
-        </div>
-    </div>       
+        <a href="" class="footer__axlab">made with love from AXLAB</a>
+    </div>
 </footer>
-<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
-<script src="//yastatic.net/share2/share.js"></script>
 <script src="dev/js/jquery-11.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js"></script>
 <script src="production/build.js"></script>

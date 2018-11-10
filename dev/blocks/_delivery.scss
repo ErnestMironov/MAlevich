@@ -1,0 +1,86 @@
+@import 'variables';
+
+.delivery{
+    padding-top: 28px;
+
+    &__arc{
+        position: absolute;
+        left: 2%;
+        top: -40%;
+        z-index: -1;
+            
+    }
+
+    &__title{
+        margin: 0;
+        font-weight: 300;
+        color: $blue;
+        font-size: 36px;
+        letter-spacing: 0.03em;
+    }
+
+    &__item{
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    &__subtitle{
+        font-weight: 300;
+        font-size: 36px;
+        letter-spacing: 0.03em;
+        margin: auto;
+        max-width: 451px;
+    }
+
+    &__buttons-wrapper{
+        display: flex;
+        justify-content: space-between;
+        max-width: 922px;
+        margin: auto;
+        margin-top: 41px;
+    }
+
+    &__button{
+        text-decoration: none;
+        color:  $black;
+        font-size: 24px;
+        letter-spacing: 0.03em;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+
+        &:hover{
+            svg path:nth-child(1){
+                fill: $blue;
+                fill-opacity: 1;
+            }
+
+            svg path:nth-child(2){
+                stroke: $blue;
+            }
+
+            .delivery__button-text{
+                color: $white;
+            }
+        }
+    }
+
+    &__button-bg{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        path{
+        }
+    }
+    
+    &__button-text{
+        position: relative;
+        z-index: 1;
+        pointer-events: none;
+        transition: all ease 0.25s; 
+        max-width: 219px;
+        display: block;
+    }
+}

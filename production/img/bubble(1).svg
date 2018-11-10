@@ -1,3 +1,11 @@
-<svg width="254" height="201" viewBox="0 0 254 201" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M254 88.7622C254 168.426 174.155 201 112.193 201C50.2304 201 0 136.42 0 56.7568C0 -22.9065 63.3291 4.58381 125.291 4.58381C187.254 4.58381 254 9.0989 254 88.7622Z" fill="#C4C4C4" fill-opacity="0.3"/>
-</svg>
+<svg width="240" height="201" viewBox="0 0 240 201" fill="none" class="categories__bubble" xmlns="http://www.w3.org/2000/svg">
+    <path id="shape2" d="M 254 88.7622 C 254 168.426 174.155 201 112.193 201 C 50.2304 201 0 136.42 0 56.7568 C 0 -22.9065 63.3291 4.58381 125.291 4.58381 C 187.254 4.58381 254 9.0989 254 88.7622 Z" fill="#C4C4C4" fill-opacity="0.3">
+        <animate begin="mouseover" attributeName="d" dur="0.5s" values="M254 88.7622C254 168.426 174.155 201 112.193 201C50.2304 201 0 136.42 0 56.7568C0 -22.9065 63.3291 4.58381 125.291 4.58381C187.254 4.58381 254 9.0989 254 88.7622Z; M282 100C282 168.566 186.242 181 127.451 181C68.6596 181 0 168.566 0 100C0 31.4341 81.2089 0 140 0C198.791 0 282 31.4341 282 100Z" fill="freeze"/> 
+        <animate begin="mouseover" attributeName="fill" dur="0.5s" to="#0193D2" fill="freeze"/>
+        <animate begin="mouseover" attributeName="fill-opacity" dur="0.5s" to="1" fill="freeze"/>
+        
+        <animate begin="mouseout"  attributeName="fill" dur="0.5s" to="#C4C4C4" fill="freeze"/>
+        <animate begin="mouseout"  attributeName="fill-opacity" dur="0.5s" to="0.3" fill="freeze"/> 
+        <animate begin="mouseout"  attributeName="d" dur="0.5s" values="M282 100C282 168.566 186.242 181 127.451 181C68.6596 181 0 168.566 0 100C0 31.4341 81.2089 0 140 0C198.791 0 282 31.4341 282 100Z; M 254 88.7622 C 254 168.426 174.155 201 112.193 201 C 50.2304 201 0 136.42 0 56.7568 C 0 -22.9065 63.3291 4.58381 125.291 4.58381 C 187.254 4.58381 254 9.0989 254 88.7622 Z" fill="freeze"/> 
+    </path> 
+</svg> 

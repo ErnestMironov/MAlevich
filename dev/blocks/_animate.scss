@@ -1,45 +1,9 @@
 @import 'variables';
 
-@keyframes fadeInLeftBig {
+@keyframes fadeInRight {
   from {
     opacity: 0;
-    transform: translate3d(-2000px, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.fadeInLeftBig {
-  animation-name: fadeInLeftBig;
-}
-
-@keyframes fadeInLeftBigWithRotate {
-  from {
-    opacity: 0;
-    transform: translate3d(-2000px, 0, 0) rotate(-90deg);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0) rotate(-90deg);
-  }
-}
-
-.fadeInLeftBigWithRotate {
-  animation-name: fadeInLeftBigWithRotate;
-  @include mobile{
-    animation-name: fadeInLeftBig;
-  }
-}
-  
-
-@keyframes fadeInRightBig {
-  from {
-    opacity: 0;
-    transform: translate3d(2000px, 0, 0);
+    transform: translate3d(150px, 0, 0);
   }
 
   to {
@@ -49,55 +13,37 @@
 }
 
 .fadeInRightBig {
-  animation-name: fadeInRightBig;
+  animation-name: fadeInRight;
 }
 
-@keyframes fullWidth {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-.fullWidth{
-  animation-name: fullWidth;
-}
-
-@keyframes fullHeight {
-  from {
-    height: 0;
-  }
-  to {
-    height: 100%;
-  }
-}
-
-.fullHeight{
-  animation-name: fullHeight;
-}
-
-@keyframes fadeInDownBig {
+@keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translate3d(0, -2000px, 0);
   }
 
   to {
     opacity: 1;
-    transform: translate3d(0, 0, 0);
   }
 }
 
-.fadeInDownBig {
-  animation-name: fadeInDownBig;
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes dash {
+  from {
+      stroke-dashoffset: -1000;
+  }
+
+  to {
+      stroke-dashoffset: 0;
+  }
 }
 
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -150px, 0);
   }
 
   to {
@@ -108,4 +54,18 @@
 
 .fadeInDown {
   animation-name: fadeInDown;
+}
+
+@keyframes glassFall {
+  from {
+    transform: rotate(0) translateX(0);
+  }
+
+  to {
+    transform: rotate(-90deg) translateX(24px);
+  }
+}
+
+.glass-fall {
+  animation-name: glassFall;
 }

@@ -3,12 +3,13 @@ $white: #FFF;
 $blue: #0193D2;
 $yellow: #FFF10D;
 $grey: #6a6a6a;
+$purple: #CB006B; 
 
 //--------DEVICE SIZE--------
 $small-mobile: 400px;
 $tablet-width: 648px;
 $desktop-width: 1023px;
-$container-width: 1265px;
+$container-width: 1178px;
 
 @mixin mobile {
     @media (max-width: #{$tablet-width - 1px}) {

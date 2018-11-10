@@ -1,131 +1,111 @@
 @import 'variables';
 
 .form{
-    padding-top: 93px;
-
-    @include mobile{
-        padding-top: 40px;
-    }
-    
+    padding-top: 308px;
+    position: relative;
 
     .container{
-        padding: 360px 0 0;
-        top: -360px;
-        box-sizing: unset;
-        overflow: hidden;
-        max-width: 100%;
-
-        @include mobile{
-            top: 0;
-            padding: 0 40px;
-            overflow: visible;
-        }
+        position: relative;
+        z-index: 1;
     }
 
-    &__logo{
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
+    &__bubble{
+        position: absolute;
+        left: 0;
+        transform: translateX(-80%);
+        top: 193px;
+    }
 
-        @include mobile{
+    &__border{
+        position: absolute;
+        z-index: -1;
+        bottom: -456px;
+        left: 50%;
+        margin-left: -418px;
+    }
+
+    &__title{
+        font-weight: 300;
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 0.1em;
+    }
+
+    &__inputs-wrapper{
+        margin: auto;
+        margin-top: 111px;
+        width: 352px;
+        height: 352px;
+        background-color: $black;
+        padding: 25px 29px;
+    }
+
+    &__input{
+        margin-bottom: 25px;
+
+        &:nth-of-type(1){
+            width: 96px;
+        }
+
+        &:nth-of-type(2){
+            width: 234px;
+        }
+
+        &:nth-of-type(3){
+            width: 176px;
+        }
+        
+    }
+
+    &__file{
+        margin: auto;
+        margin-top: 42px;
+        width: 352px;
+        display: block;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+
+        input{
             display: none;
         }
     }
 
-    &__head{
-        text-align: center;
+    &__file-text{
+        position: absolute;
+        line-height: 26px;
         font-size: 18px;
-        letter-spacing: 0.13em;
-        text-transform: uppercase;
+        text-transform: lowercase;
+        left: 29px;
+        top: 50%;
+        transform: translateY(-60%);
+    }
+
+    &__description{
         margin: auto;
-        margin-top: 35px;
-        position: relative;
-        max-width: 1215px;
-        font-weight: 300;
+        margin-top: 32px;
+        line-height: 20px;
+        font-size: 13px;
+        max-width: 352px;
     }
 
-    &__subtitle{
-        color: $blue;
-        font-size: 18px;
-        text-align: center;
-        letter-spacing: 0.01em;
-        max-width: 594px;
-        margin: auto;
-        margin-top: 9px;
+    &__img{
+        position: absolute;
+        left: 351px;
+        bottom: -193px;
 
-        @include mobile{
-            line-height: 17px;
-            font-size: 14px;
-            text-align: left;
+        @include container{
+            left: 128px;
+            bottom: -293px;
         }
     }
 
-    &__body{
-        margin: auto;
-        margin-top: 21px;
-        width: 594px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        
-        @include mobile{
-            width: 100%;
-        }
+    &__img-man{
+        position: absolute;
+        bottom: 29px;
+        left: 373px;
+
     }
 
-    &__input{
-        width: 267px;
-
-        @include mobile{
-            width: 100%;
-            margin-bottom: 29px;
-        }
-    }
-
-    &__textarea{
-        margin-top: 42px;
-        width: 100%;
-
-        @include mobile{
-            margin-top: 0;
-        }
-    }
-
-    &__btn{
-        font-size: 18px;
-        text-transform: unset;
-        color: $black;
-        margin: auto;
-        margin-top: 46px;
-        margin-bottom: 133px;
-
-        @include mobile{
-            margin-bottom: 42px;
-            font-size: 24px;
-        }
-    }
-
-    &__A{
-        &_m{
-            position: absolute;
-            top: 0;
-            left: 0;
-            transform: translateX(-50%); 
-            
-            @include mobile{
-                display: none;
-            }
-        }
-        &_s{
-            position: absolute;
-            top: auto;
-            bottom: 0;
-            right: 0;
-            transform: translateX(50%); 
-            
-            @include mobile{
-                display: none;
-            }
-        }
-    }
+    
 }
