@@ -1,19 +1,17 @@
 // import * as FilePond from 'filepond';
-import WOW from "wow.js";
 
+function deliveryTabs() {
+    $('[data-delivery]').each(function () { // выбираем кнопки на странице доставки и проходимся по каждой
 
-var wow = new WOW();
+        $(this).click(function () { // прослушивваем "клик" по кнопке
 
-window.onload = function(){ 
-    wow.init(); 
+            $(this).parents(".delivery__item").find(".delivery__list").removeClass('delivery__list_active'); // ищем ее родителя и скрывавем все "цели" кнопки
+
+            let target = $(this).attr("data-delivery"); // находим "цель" кнопки
+
+            $("#" + target + "").addClass("delivery__list_active"); // добавляем "цели" активный класс
+
+        })
+    })
 }
-
-// const inputElement = document.querySelector('input[type="file"]');
-// const pond = FilePond.create( inputElement );  
-
-
-// pond.setOptions({
-//     labelIdle: 'выберите файл',
-//     labelFileLoading: 'Загрузка',
-//     labelFileLoadError: 'Во время загрузки произошла ошибка'
-// });
+deliveryTabs();

@@ -20,8 +20,8 @@
     }
 
     &__item{
-        margin-top: 100px;
-        text-align: center;
+        padding-top: 100px;
+        margin-bottom: 100px;
     }
 
     &__subtitle{
@@ -30,6 +30,13 @@
         letter-spacing: 0.03em;
         margin: auto;
         max-width: 451px;
+        text-align: center;
+
+        // МОДИФИКАТОРЫ
+
+        &_color{
+            color:  $blue; 
+        }
     }
 
     &__buttons-wrapper{
@@ -37,7 +44,7 @@
         justify-content: space-between;
         max-width: 922px;
         margin: auto;
-        margin-top: 41px;
+        margin-top: 86px;
     }
 
     &__button{
@@ -48,6 +55,9 @@
         position: relative;
         z-index: 1;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &:hover{
             svg path:nth-child(1){
@@ -82,5 +92,119 @@
         transition: all ease 0.25s; 
         max-width: 219px;
         display: block;
+        text-align: center;
+    }
+
+    &__list{
+        margin-top: 156px;
+        justify-content: center;
+        display: none;
+        
+        //МОДИФИКАТОРЫ 
+        &_active{
+            display: flex;
+        }
+        
+        &_single{
+
+            .delivery__list-title,.delivery__list-text{
+                max-width: 621px;
+                margin-top: 0;
+                margin-bottom: 8px;
+            }
+
+            .delivery__list-item{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .delivery__list-title{
+                line-height: 67px;
+                font-size: 36px;
+                letter-spacing: 0.04em;
+            }
+        }
+    }
+
+    &__list-item{
+        position: relative;
+        margin-right: 83px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__list-title{
+        font-weight: 300;
+        line-height: 29px;
+        font-size: 24px;
+        letter-spacing: 0.03em;
+        text-transform: lowercase;
+        color: $blue;
+        width: 243px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__list-text{
+        margin-top: 17px;
+        font-size: 18px;
+        letter-spacing: 0.03em;
+        text-transform: lowercase;
+        position: relative;
+        z-index: 1;
+        max-width: 243px;
+    }
+
+    &__list-bubble{
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__table{
+        padding-top: 120px;
+        width: 949px;
+        margin: auto;
+    } 
+
+    &__table-head, &__table-row{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__table-head{
+        margin-top: 101px;
+        margin-bottom: 30px;
+        border-bottom:  2px solid rgba(196, 196, 196, 0.4);
+        padding-bottom: 17px;
+    }
+
+    &__table-row{
+        margin-bottom: 12px;
+    }
+
+    &__table-cell{
+        width: 32%;
+        max-width: 32%;
+        text-align: left;
+        font-size: 24px;
+        letter-spacing: 0.03em;
+        text-transform: lowercase;
+    }
+
+    &__text{
+        margin: auto;
+        margin-top: 178px;
+        font-size: 18px;
+        letter-spacing: 0.03em;
+        text-transform: lowercase;
+        max-width: 588px;
     }
 }

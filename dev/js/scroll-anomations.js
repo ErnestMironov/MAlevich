@@ -1,3 +1,10 @@
+import WOW from "wow.js";
+
+
+var wow = new WOW();
+
+
+
 var dash = document.querySelector(".block-2__list");
 var glass = document.querySelector(".block-2__glass");
 
@@ -35,4 +42,8 @@ function glassRotate () {
 window.onscroll = function() {
   showDash();
   glassRotate ();
+}
+
+window.onload = function(){ 
+  wow.init(); 
 }
