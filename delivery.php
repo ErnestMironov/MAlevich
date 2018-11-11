@@ -11,16 +11,17 @@
         ?>
         <div class="delivery">
             <div class="container">
+                <img src="production/img/c.svg" alt="" class="delivery__c">
                 <img src="production/img/arc(5).svg" alt="" class="delivery__arc">
                 <h1 class="delivery__title">оплата и доставка</h1>
                 <div class="delivery__item">
                     <h2 class="delivery__subtitle">оплата заказа</h2>
                     <div class="delivery__buttons-wrapper">
-                        <div data-delivery="paymentsWay" class="delivery__button">
+                        <div role="button" data-delivery="paymentsWay" class="delivery__button">
                             <img src="production/img/delivery-button.svg" alt="" class="delivery__button-bg svg">
                             <span class="delivery__button-text"> когда платить </span>
                         </div>
-                        <div data-delivery="paymentsMethods" class="delivery__button">
+                        <div role="button" data-delivery="paymentsMethods" class="delivery__button">
                             <img src="production/img/delivery-button2.svg" alt="" class="delivery__button-bg svg">
                             <span class="delivery__button-text"> способы оплаты </span>
                         </div>
@@ -69,13 +70,16 @@
                     </div>
                 </div>
                 <div class="delivery__item">
+                    <img src="production/img/arc(6).svg" alt="" class="delivery__arc-2">
+                    <img src="production/img/m.svg" alt="" class="delivery__m">
+                    <img src="production/img/y.svg" alt="" class="delivery__y">
                     <h2 class="delivery__subtitle">доставка и способы получения заказа</h2>
                     <div class="delivery__buttons-wrapper">
-                        <div data-delivery="pickup" class="delivery__button">
+                        <div role="button" data-delivery="pickup" class="delivery__button">
                             <img src="production/img/delivery-button3.svg" alt="" class="delivery__button-bg svg">
                             <span class="delivery__button-text"> самовывоз с производства </span>
                         </div>
-                        <div data-delivery="delivery" class="delivery__button">
+                        <div role="button" data-delivery="delivery" class="delivery__button">
                             <img src="production/img/delivery-button4.svg" alt="" class="delivery__button-bg svg">
                             <span class="delivery__button-text"> доставка </span>
                         </div>
@@ -134,6 +138,11 @@
                             <div class="delivery__table-cell">пятница с 10:00 до 22:00</div>
                         </div>
                     </div>
+                    <div class="delivery__courier">
+                        <img class="delivery__courier-thoughts svg" src="production/img/courier.svg" alt="">
+                        <img src="production/img/blue-man.svg" class="delivery__courier-man" alt="">                 
+                    </div>
+                    <img src="production/img/k.svg" alt="" class="delivery__k">
                 </div>
                 <div class="delivery__text">
                     <p> «Стартом заказа» является момент поступления оплаты за него на счёт типографии.</p>
@@ -146,6 +155,7 @@
                         не важен.</p>
                 </div>
             </div>
+            <img src="production/img/delivery-footer-bubble.svg" alt="" class="delivery__bottom-bubble">
         </div>
         <?php
             include 'blocks/footer.php';

@@ -10,7 +10,7 @@ var glass = document.querySelector(".block-2__glass");
 
 function showDash () {
   var dashOffset = dash.getBoundingClientRect()
-  if(dashOffset.top < 300){
+  if(dashOffset.top < (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) / 4){
     dash.classList.add("block-2__list_animate");
   }
 } 

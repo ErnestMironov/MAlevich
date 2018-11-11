@@ -4,6 +4,10 @@
     padding-top: 16px;
     position: relative;
 
+    .container{
+        position: relative;
+    }
+
     &__bubble{
         position: absolute;
         top: -314px;
@@ -11,10 +15,17 @@
         transform: rotate(-30deg);
     }
 
+    &__bubble-2{
+        position: absolute;
+        top: -400px;
+        right: -70px;
+    }
+
     &__arc{
         position: absolute;
-        left: 2%;
-        top: -40%;
+        left: -391px;
+        top: -960px;
+        z-index: -1;
             
     }
 
@@ -62,12 +73,13 @@
         display: flex;
         justify-content: center;
         position: relative;
+        margin-top: -200px;
 
         iframe{
             position: absolute;
             z-index: 1;
-            left: 56%;
-            transform: translateX(-50%);
+            left: 50%;
+            transform: translateX(-38.6%);
             bottom: 30px;
             
         }
