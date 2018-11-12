@@ -2,6 +2,7 @@
 
 .main-block{
     overflow: hidden;
+    max-width: 100%;
 }
 
 @import 'block-1';
@@ -9,6 +10,7 @@
 @import 'block-3'; 
 @import 'block-4';
 @import 'block-5';
+@import 'service';
 
 
 .hide-on-mobile{

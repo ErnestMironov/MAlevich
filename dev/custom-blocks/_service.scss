@@ -1,0 +1,240 @@
+@import '../blocks/variables';
+
+.service{
+    padding-top: 77px;
+    position: relative;
+
+    .container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__cabinet{
+        transition: all ease-out 0.3s;
+        filter: grayscale(1);
+    }
+    
+    &__c{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: rotate(20deg);
+        width: 129px; 
+
+    }
+
+    &__m{
+        position: absolute;
+        top: 50px;
+        left: -300px;
+        transform: rotate(60deg);
+        width: 129px; 
+
+    }
+
+    &__y{
+        position: absolute;
+        bottom: -100px;
+        right: -300px;
+        transform: rotate(-40deg); 
+        width: 136px;
+
+    }
+
+    &__k{
+        position: absolute;
+        top: 50%;
+        right: -150px;
+        width: 157px;
+        transform: translateY(-50%);
+    }
+
+    &__bottom-bubble{
+        position: absolute;
+        bottom: -650px;
+        right: -440px;
+    }
+
+    &__title{
+        margin: 0;
+        font-weight: 300;
+        font-size: 36px;
+        text-transform: lowercase;
+        margin-bottom: 120px;
+
+        &_blue{
+            color: $blue;
+        }
+
+        &_purple{
+            color: $purple;
+        }
+    }
+    
+    &__text{
+        line-height: 26px;
+        font-size: 18px;
+        text-transform: lowercase;
+        max-width: 523px;
+        position: relative;
+        margin-bottom: 170px;
+        align-self: flex-start;
+
+        //МОДИФИКАТОРЫ
+
+        &_purple{
+            color: $purple;
+        }
+
+        &_blue{
+            color: $blue;
+        }
+
+        &_center{
+            align-self: center;
+        }
+
+        &_right{
+            align-self: flex-end;
+        }
+    }
+
+    &__text-bg{
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__img{
+        position: absolute;
+
+        &_print{
+            right: -240px;
+            top: 80px;
+        }
+    }
+
+    &__subtitle{
+        text-align: center;
+        margin: auto;
+        font-weight: 300;
+        font-size: 36px;
+        text-transform: lowercase;
+        color: $blue;
+    }
+
+    &__price-list{
+        position: relative;
+    }
+
+    &__price-list-bg{
+        position: absolute;
+        z-index: -1;
+        left: -180px;
+        top: 86px;
+    }
+
+    &__table{
+        padding-top: 120px;
+        width: 949px;
+        margin: auto;
+        position: relative;
+    } 
+
+    &__table-head, &__table-row{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__table-head{
+        margin-top: 101px;
+        margin-bottom: 30px;
+        border-bottom:  2px solid rgba(196, 196, 196, 0.4);
+        padding-bottom: 17px;
+        color: $purple;
+    }
+
+    &__table-row{
+        margin-bottom: 34px;
+    }
+
+    &__table-cell{
+        width: 186px;
+        max-width: 32%;
+        text-align: left;
+        font-size: 24px;
+        letter-spacing: 0.03em;
+        text-transform: lowercase;
+    }
+
+    &__info{
+        margin-top: 292px;
+        display: flex;
+        position: relative;
+
+        &:hover{
+            .service__cabinet{
+                filter: grayscale(0);
+            }
+        }
+    }
+
+    &__info-text{
+        max-width: 662px;
+        margin-top: 108px;
+        margin-left: 73px;
+        line-height: 34px;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+    }
+
+    &__info-title{
+        margin-bottom: 46px;
+        color: $purple;
+    }
+
+    &__info-color-text{ 
+        color: $blue;
+    }
+
+    &__slider{
+        margin-top: 204px;
+        position: relative;
+
+        .swiper-container{
+            margin-top: 153px;
+            width: 600px;
+        }
+
+        .swiper-slide{
+            width: 600px;
+            height: 416px;
+            background-size: cover;
+        }
+    }
+
+    &__slider-mask{
+        position: absolute;
+        z-index: 11;
+        top: 193px;
+        left: 50%;
+        transform: translateX(-53.2%);
+        pointer-events: none;
+    }
+
+    &__slider-next, &__slider-prev{
+        position: absolute;
+        top: 340px;
+        cursor: pointer;
+    }
+
+    &__slider-next{
+        right: 0;
+    }
+
+    &__slider-prev{
+        left: 0;
+        transform: rotate(180deg);
+    }
+}

@@ -5,7 +5,7 @@
             </div>
             <?php }?> 
             <div class="categories__list">
-                <div id="first-bubble" class="categories__list-item">  
+                <a href="interior-print.php" id="first-bubble" class="categories__list-item">  
                     <img src="production/img/bubble-border(2).svg" alt="" class="categories__border">
                     <svg id="shape" width="320" height="201" viewBox="0 0 320 201" fill="none" class="categories__bubble" xmlns="http://www.w3.org/2000/svg">
                         <path  d="M 254 88.7622 C 254 168.426 174.155 201 112.193 201 C 50.2304 201 0 136.42 0 56.7568 C 0 -22.9065 63.3291 4.58381 125.291 4.58381 C 187.254 4.58381 254 9.0989 254 88.7622 Z" fill="#C4C4C4" fill-opacity="0.3">
@@ -20,8 +20,8 @@
                     </svg> 
                     <img src="production/img/paper.png" alt="" class="categories__icon">
                     <div class="categories__name">широкоформатная <br> печать</div>  
-                </div>
-                <div class="categories__list-item">
+                </a>
+                <a href="interior-print.php" class="categories__list-item">
                     <img src="production/img/bubble-border(3).svg" alt="" class="categories__border">
                     <svg id="shape2" width="221" height="201" viewBox="0 0 221 201" fill="none" class="categories__bubble" xmlns="http://www.w3.org/2000/svg">
                         <path  d="M201 82.1382C201 155.856 137.816 186 88.7825 186C39.7493 186 0 126.24 0 52.5212C0 -21.1971 50.1148 4.24173 99.148 4.24173C148.181 4.24173 201 8.41988 201 82.1382Z" fill="#C4C4C4" fill-opacity="0.3">
@@ -33,8 +33,8 @@
                     </svg> 
                     <img src="production/img/rulon.png" alt="" class="categories__icon">
                     <div class="categories__name">интерьерная <br> печать</div>
-                </div>
-                <div class="categories__list-item">
+                </a>
+                <a  class="categories__list-item">
                     <img src="production/img/bubble-border(4).svg" alt="" class="categories__border">
                     <svg id="shape3" width="320" height="201" viewBox="0 0 320 201" fill="none" class="categories__bubble" xmlns="http://www.w3.org/2000/svg">
                         <path  d="M268 91.4308C268 166.058 179.898 184 116.96 184C54.0215 184 0 166.058 0 91.4308C0 16.8033 67.3264 0 130.265 0C193.203 0 268 16.8033 268 91.4308Z" fill="#C4C4C4" fill-opacity="0.3">
@@ -49,8 +49,8 @@
                     </svg> 
                     <img src="production/img/paper-roll.png" alt="" class="categories__icon">
                     <div class="categories__name">широкоформатное <br> ламинирование</div>
-                </div>
-                <div class="categories__list-item">
+                </a>
+                <a href="interior-print.php" class="categories__list-item">
                     <img src="production/img/bubble-border(5).svg" alt="" class="categories__border">
                     <svg id="shape3" width="320" height="201" viewBox="0 0 320 201" fill="none" class="categories__bubble" xmlns="http://www.w3.org/2000/svg">
                         <path  d="M186 122C186 182.243 125.132 191 84.8812 191C44.63 191 0 166.367 0 106.124C0 45.8808 59.7488 0 100 0C140.251 0 186 61.7571 186 122Z" fill="#C4C4C4" fill-opacity="0.3">
@@ -65,8 +65,8 @@
                     </svg> 
                     <img src="production/img/sticker.png" alt="" class="categories__icon">
                     <div class="categories__name">плотерная <br> резка</div>
-                </div>
-                <div class="categories__list-item">
+                </a>
+                <a href="interior-print.php" class="categories__list-item">
                     <img src="production/img/bubble-border(6).svg" alt="" class="categories__border">
                     <svg id="shape3" width="174" height="201" viewBox="0 0 174 201" fill="none" class="categories__bubble" xmlns="http://www.w3.org/2000/svg">
                         <path  d="M172 116C172 168.316 83.5677 186 46 186C8.43225 186 0 114.316 0 62C0 9.6838 52.4323 0 90 0C127.568 0 172 63.6837 172 116Z" fill="#C4C4C4" fill-opacity="0.3">
@@ -81,8 +81,8 @@
                     </svg>  
                     <img src="production/img/docs.png" alt="" class="categories__icon">
                     <div class="categories__name">pos <br> материалы</div>
-                </div>
-                <div class="categories__list-item">
+                </a>
+                <a href="interior-print.php" class="categories__list-item">
                     <img src="production/img/bubble-border(7).svg" alt="" class="categories__border">
                     <svg id="shape6" width="200" height="201" viewBox="0 0 200 201" fill="none" class="categories__bubble" xmlns="http://www.w3.org/2000/svg">
                         <path  d="M178 108C178 160.316 114.59 188 77.0224 188C39.4547 188 0 130.316 0 78C0 25.6838 39.4547 0 77.0224 0C114.59 0 178 55.6838 178 108Z" fill="#C4C4C4" fill-opacity="0.3">
@@ -97,6 +97,6 @@
                     </svg>  
                     <img src="production/img/auto.png" alt="" class="categories__icon">
                     <div class="categories__name">наклейки <br> на авто</div>
-                </div>
+                </a>
             </div>
         </div>

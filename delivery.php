@@ -17,7 +17,7 @@
                 <div class="delivery__item">
                     <h2 class="delivery__subtitle">оплата заказа</h2>
                     <div class="delivery__buttons-wrapper">
-                        <div role="button" data-delivery="paymentsWay" class="delivery__button">
+                        <div role="button" data-delivery="paymentsWay" class="delivery__button delivery__button_active">
                             <img src="production/img/delivery-button.svg" alt="" class="delivery__button-bg svg">
                             <span class="delivery__button-text"> когда платить </span>
                         </div>
@@ -26,7 +26,7 @@
                             <span class="delivery__button-text"> способы оплаты </span>
                         </div>
                     </div>
-                    <div id="paymentsWay" class="delivery__list">
+                    <div id="paymentsWay" class="delivery__list delivery__list_active">
                         <div class="delivery__list-item">
                             <img src="production/img/delivery-bubble5.svg" alt="" class="delivery__list-bubble">
                             <div class="delivery__list-title">оформление заказа</div>
@@ -75,7 +75,7 @@
                     <img src="production/img/y.svg" alt="" class="delivery__y">
                     <h2 class="delivery__subtitle">доставка и способы получения заказа</h2>
                     <div class="delivery__buttons-wrapper">
-                        <div role="button" data-delivery="pickup" class="delivery__button">
+                        <div role="button" data-delivery="pickup" class="delivery__button delivery__button_active">
                             <img src="production/img/delivery-button3.svg" alt="" class="delivery__button-bg svg">
                             <span class="delivery__button-text"> самовывоз с производства </span>
                         </div>
@@ -84,7 +84,7 @@
                             <span class="delivery__button-text"> доставка </span>
                         </div>
                     </div>
-                    <div id="pickup" class="delivery__list delivery__list_single">
+                    <div id="pickup" class="delivery__list delivery__list_active delivery__list_single">
                         <div class="delivery__list-item">
                             <img src="production/img/delivery-bubble4.svg" alt="" class="delivery__list-bubble">
                             <div class="delivery__list-text">При заказе на сумму до 2000 рублей</div>
